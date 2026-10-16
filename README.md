@@ -1,11 +1,15 @@
-# PixelInjector
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/banner_dark.png">
+    <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/banner_light.png" alt="PixelInjector" width="545">
+  </picture>
+</h1>
 
 [![Release](https://img.shields.io/github/v/release/hxreborn/PixelInjector?style=flat-square)](https://github.com/hxreborn/PixelInjector/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/hxreborn/PixelInjector/total?style=flat-square)](https://github.com/hxreborn/PixelInjector/releases)
 [![Build](https://img.shields.io/github/actions/workflow/status/hxreborn/PixelInjector/ci.yml?branch=main&style=flat-square&label=build)](https://github.com/hxreborn/PixelInjector/actions/workflows/ci.yml)
 [![Android 14+](https://img.shields.io/badge/Android-14%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](#install)
 [![libxposed API 102](https://img.shields.io/badge/libxposed_API-102-ff69b4?style=flat-square)](https://github.com/libxposed/api)
-[![License](https://img.shields.io/badge/license-GPL--3.0--only-A42E2B?style=flat-square)](https://github.com/hxreborn/PixelInjector/blob/main/LICENSE)
 
 A modular Xposed module of Pixel tweaks, each behind its own switch. I built it for my own phone, but if a tweak is useful to you and breaks on your build, I can adapt or fix it on demand.
 
@@ -107,7 +111,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 | Developer key | `3d76ec6a` |
 | Reply key | X25519 per report, wrapped by [Android Keystore](https://developer.android.com/privacy-and-security/keystore) |
 | Server | `reports.hxreborn.eu` holds no private key |
-| Redacted data | Emails, phone numbers, IP and MAC addresses, Wi-Fi names, device and advertising IDs, storage paths, URL and header tokens ([Redactor](https://github.com/hxreborn/PixelInjector/blob/main/app/src/main/kotlin/eu/hxreborn/pixelinjector/support/Redactor.kt)) |
+| Redacted log data | Emails, phone numbers, IP and MAC addresses, Wi-Fi names, device and advertising IDs, storage paths, URL and header tokens ([Redactor](https://github.com/hxreborn/PixelInjector/blob/main/app/src/main/kotlin/eu/hxreborn/pixelinjector/support/Redactor.kt)) |
 | Retention | 90 days |
 | Hook status | Opt-in in Settings. Sends which tweaks load per Android build, once per version |
 | Update check | On by default in Settings. A plain request every 6 hours with no device data |
