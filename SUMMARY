@@ -1,1 +1,1 @@
-Opinionated Xposed module that bundles the Pixel tweaks I would otherwise need twenty modules for.
+A modular Xposed module of Pixel tweaks, each behind its own switch.
