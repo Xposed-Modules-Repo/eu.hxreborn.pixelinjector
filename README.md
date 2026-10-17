@@ -51,6 +51,10 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 - **Mute screenshot sound**: skips the screenshot shutter sound.
 - **Empty shade message**: replaces the empty shade's trophy and text with your own text and one of 141 icons. Android 17 only.
 - **Always expand notifications**: opens notifications expanded unless you collapsed one by hand.
+- **Pin ongoing notifications**: stops swiping away ongoing notifications like media and VPN.
+- **Charging details**: adds watts, volts, amps and battery temperature under the lock screen charging text.
+- **Fingerprint icon**: replaces the lock screen fingerprint icon with one of 24 icons from custom ROMs or your own image and can hide the circle behind it. Phones with an under-display fingerprint sensor.
+- **Heads-up duration**: sets how long a heads-up notification shows, from 1 to 15 seconds.
 - **Double tap status bar to sleep**: double tap empty status bar space and the phone sleeps.
 - **Biometric Bypass**: taps confirm on the biometric prompt after a face unlock and plays a system sound of your choice. Same hook as <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/modules/biometric-bypass.png" width="16" alt=""> [biometric-bypass](https://github.com/hxreborn/biometric-bypass).
 
@@ -64,6 +68,8 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 - **Double tap to sleep**: double tap empty home screen space and the phone locks and sleeps. Pixel Launcher and Launcher3.
 - **Hide gesture pill**: makes the navigation handle transparent and keeps a chosen percent of the bottom inset under apps. A percent change restarts the launcher.
 - **Hide search bar**: hides the search bar above the hotseat and frees the row it reserves. Pixel Launcher and Launcher3.
+- **Hide app shortcuts**: a long press on an app shows only the system actions. Pixel Launcher and Launcher3.
+- **Home menu entry**: adds PixelInjector to the home screen long press menu. Pixel Launcher and Launcher3.
 
 > [!WARNING]
 > Double tap to sleep runs `su` from Pixel Launcher. With KernelSU and APatch, grant root to Pixel Launcher by hand in the manager, not only to PixelInjector. On KernelSU it shows up after you turn on Show system apps.
@@ -113,7 +119,6 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 | Server | `reports.hxreborn.eu` holds no private key |
 | Redacted log data | Emails, phone numbers, IP and MAC addresses, Wi-Fi names, device and advertising IDs, storage paths, URL and header tokens ([Redactor](https://github.com/hxreborn/PixelInjector/blob/main/app/src/main/kotlin/eu/hxreborn/pixelinjector/support/Redactor.kt)) |
 | Retention | 90 days |
-| Hook status | Opt-in in Settings. Sends which tweaks load per Android build, once per version |
 | Update check | On by default in Settings. A plain request every 6 hours with no device data |
 
 </details>
@@ -126,6 +131,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 - [LuckyPray/DexKit](https://github.com/LuckyPray/DexKit) for the dex search library.
 - [JingMatrix/Vector](https://github.com/JingMatrix/Vector) for the module log screen design.
 - [Material Symbols](https://github.com/google/material-design-icons) for the empty shade icons (Apache 2.0).
+- AospExtended's UdfpsResources for the fingerprint icons, taken from [Syberia](https://github.com/syberia-project/platform_vendor_syberia), [DerpFest](https://github.com/DerpFest-AOSP/vendor_derp), [AfterlifeOS](https://github.com/AfterlifeOS/packages_overlays_Themes), [Infinity-X](https://github.com/ProjectInfinity-X/packages_overlays_Themes) and [AlphaDroid](https://github.com/AlphaDroid-Project/vendor_addons).
 
 ## License
 
