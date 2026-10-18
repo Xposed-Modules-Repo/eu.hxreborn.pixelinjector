@@ -54,6 +54,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 - **Always expand notifications**: opens notifications expanded unless you collapsed one by hand.
 - **Pin ongoing notifications**: stops swiping away ongoing notifications like media and VPN.
 - **Charging details**: adds watts, volts, amps and battery temperature under the lock screen charging text.
+- **Download chip**: shows a download's progress as a chip in the status bar. Ported from [Iconify](https://github.com/Mahmud0808/Iconify)'s ongoing action chip.
 - **Fingerprint icon**: replaces the lock screen fingerprint icon with one of 24 icons from custom ROMs or your own image and can hide the circle behind it. Phones with an under-display fingerprint sensor.
 - **Heads-up duration**: sets how long a heads-up notification shows, from 1 to 15 seconds.
 - **Double tap status bar to sleep**: double tap empty status bar space and the phone sleeps.
@@ -97,7 +98,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 ## Report a bug
 
-Report from the app or on [GitHub](https://github.com/hxreborn/PixelInjector/issues/new/choose), whichever you prefer. App reports are opt-in and end-to-end encrypted. Nothing leaves the phone until you tap Send.
+Report from the app or on [GitHub](https://github.com/hxreborn/PixelInjector/issues/new/choose), whichever you prefer. App reports are opt-in and end-to-end encrypted. Nothing leaves the phone until you tap Send. On a phone that isn't a Pixel and doesn't run an open source ROM such as LineageOS, a report about a System UI or System Framework tweak also sends that ROM's SystemUI or `services.jar` code, encrypted with the report.
 
 1. Open Settings, tap Report a bug, say what happened and send.
 2. Follow it in Your reports. My questions and the GitHub issue show there.
@@ -113,7 +114,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 | Scheme | [HPKE](https://www.rfc-editor.org/rfc/rfc9180) RFC 9180 base mode |
 | Key exchange | DHKEM [X25519](https://www.rfc-editor.org/rfc/rfc7748) HKDF-SHA256 |
 | Cipher | [AES-256-GCM](https://csrc.nist.gov/pubs/sp/800/38/d/final) |
-| Encrypted | Message, module log, app versions |
+| Encrypted | Message, module log, app versions, ROM code from phones that aren't Pixels |
 | Not encrypted | Phone model, build, framework. Bound to the ciphertext as [associated data](https://www.rfc-editor.org/rfc/rfc9180#section-5.2) |
 | Developer key | `3d76ec6a` |
 | Reply key | X25519 per report, wrapped by [Android Keystore](https://developer.android.com/privacy-and-security/keystore) |
@@ -129,6 +130,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 - [5ec1cff/MyInjector](https://github.com/5ec1cff/MyInjector) for the module structure, the hot reload flow and the NEW_TASK rule grammar.
 - [tehcneko/clipboardwhitelist](https://github.com/tehcneko/clipboardwhitelist) for the clipboard hook idea.
 - [Mahmud0808/PixelLauncherEnhanced](https://github.com/Mahmud0808/PixelLauncherEnhanced) for the gesture pill and search bar hooks.
+- [Mahmud0808/Iconify](https://github.com/Mahmud0808/Iconify) for the ongoing action chip behind the download chip.
 - [LuckyPray/DexKit](https://github.com/LuckyPray/DexKit) for the dex search library.
 - [JingMatrix/Vector](https://github.com/JingMatrix/Vector) for the module log screen design.
 - [Material Symbols](https://github.com/google/material-design-icons) for the empty shade icons (Apache 2.0).
