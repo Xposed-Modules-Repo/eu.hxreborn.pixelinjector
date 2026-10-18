@@ -5,16 +5,17 @@
   </picture>
 </h1>
 
+[![libxposed API 102](https://img.shields.io/badge/libxposed_API-102-ff69b4?style=flat-square)](https://central.sonatype.com/artifact/io.github.libxposed/api)
 [![Release](https://img.shields.io/github/v/release/hxreborn/PixelInjector?style=flat-square)](https://github.com/hxreborn/PixelInjector/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/hxreborn/PixelInjector/total?style=flat-square)](https://github.com/hxreborn/PixelInjector/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/hxreborn/PixelInjector/ci.yml?branch=main&style=flat-square&label=build)](https://github.com/hxreborn/PixelInjector/actions/workflows/ci.yml)
 [![Android 14+](https://img.shields.io/badge/Android-14%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](#install)
-[![libxposed API 102](https://img.shields.io/badge/libxposed_API-102-ff69b4?style=flat-square)](https://github.com/libxposed/api)
 
 A modular Xposed module of Pixel tweaks, each behind its own switch. I built it for my own phone, but if a tweak is useful to you and breaks on your build, I can adapt or fix it on demand.
 
 - **One switch per tweak.** Off tweaks change nothing.
 - **Applies instantly.** Switches take effect live, and updates hot reload through libxposed API 102 with no reboot.
+
+> [!NOTE]
+> I build and test it on Pixel phones. On other ROMs a tweak can miss its target. For LineageOS and other ROMs with public source, I fix the tweak from that source. A closed ROM like HyperOS, One UI or ColorOS has no source to read, so the fix needs that ROM's own SystemUI or `services.jar`.
 
 <details>
 <summary><img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/photo_library.svg" width="20" alt=""> Screenshots</summary>
