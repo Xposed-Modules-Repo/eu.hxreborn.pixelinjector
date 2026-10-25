@@ -96,6 +96,11 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 - **GH FastPass**: closes the GitHub app's approved 2FA dialog right away. Same hook as <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/modules/gh-fast-pass.svg" width="16" alt=""> [gh-fast-pass](https://github.com/hxreborn/gh-fast-pass).
 
+### <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/public.svg" width="20" alt=""> Firefox
+
+- **Material You colors**: uses your wallpaper colors in Iceraven and Firefox (stable, Beta and Nightly). Private browsing takes dark red surfaces and the red error accent. Toggling restarts the browser.
+- **Material 3 loading indicator**: shows pull to refresh as the shape morphing Material 3 indicator in your wallpaper colors. Toggling restarts the browser.
+
 ## Report a bug
 
 Report from the app or on [GitHub](https://github.com/hxreborn/PixelInjector/issues/new/choose), whichever you prefer. App reports are opt-in and end-to-end encrypted. Nothing leaves the phone until you tap Send. On a phone that isn't a Pixel and doesn't run an open source ROM such as LineageOS, a report about a System UI or System Framework tweak also sends that ROM's SystemUI or `services.jar` code, encrypted with the report.
@@ -134,6 +139,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 - [LuckyPray/DexKit](https://github.com/LuckyPray/DexKit) for the dex search library.
 - [JingMatrix/Vector](https://github.com/JingMatrix/Vector) for the module log screen design.
 - [Material Symbols](https://github.com/google/material-design-icons) for the empty shade icons (Apache 2.0).
+- [Material Components for Android](https://github.com/material-components/material-components-android) for the loading indicator shapes and motion (Apache 2.0).
 - AospExtended's UdfpsResources for the fingerprint icons, taken from [Syberia](https://github.com/syberia-project/platform_vendor_syberia), [DerpFest](https://github.com/DerpFest-AOSP/vendor_derp), [AfterlifeOS](https://github.com/AfterlifeOS/packages_overlays_Themes), [Infinity-X](https://github.com/ProjectInfinity-X/packages_overlays_Themes), [AlphaDroid](https://github.com/AlphaDroid-Project/vendor_addons), [crDroid](https://github.com/crdroidandroid/android_vendor_addons) and [AospExtended](https://github.com/AospExtended/platform_vendor_aosp).
 
 ## License
