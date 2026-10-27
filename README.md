@@ -98,8 +98,10 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 ### <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/public.svg" width="20" alt=""> Firefox
 
-- **Material You colors**: uses your wallpaper colors in Iceraven and Firefox (stable, Beta and Nightly). Private browsing takes dark red surfaces and the red error accent. Toggling restarts the browser.
-- **Material 3 loading indicator**: shows pull to refresh as the shape morphing Material 3 indicator in your wallpaper colors. Toggling restarts the browser.
+- **Material You colors**: uses your wallpaper colors in Iceraven and Firefox (stable, Beta and Nightly). Private browsing takes dark red surfaces and the red error accent.
+- **Material 3 loading indicator**: shows pull to refresh as the shape morphing Material 3 indicator in your wallpaper colors.
+- **Menu style: Classic popup**: opens the three-dot menu as a popup laid out like Chrome's overflow menu, with the navigation buttons on top, in place of the bottom sheet.
+- **Betterfox**: sets the [Betterfox](https://github.com/yokoffing/Betterfox) prefs that the Android engine reads, per browser, with each group and pref switchable. Toggling restarts the browser.
 
 ## Report a bug
 
@@ -140,6 +142,7 @@ Or reach me at [hxreborn@duck.com](mailto:hxreborn@duck.com) or on [Telegram](ht
 - [JingMatrix/Vector](https://github.com/JingMatrix/Vector) for the module log screen design.
 - [Material Symbols](https://github.com/google/material-design-icons) for the empty shade icons (Apache 2.0).
 - [Material Components for Android](https://github.com/material-components/material-components-android) for the loading indicator shapes and motion (Apache 2.0).
+- [BlazeFTL/FTL-Patches](https://github.com/BlazeFTL/FTL-Patches) for the classic popup menu.
 - AospExtended's UdfpsResources for the fingerprint icons, taken from [Syberia](https://github.com/syberia-project/platform_vendor_syberia), [DerpFest](https://github.com/DerpFest-AOSP/vendor_derp), [AfterlifeOS](https://github.com/AfterlifeOS/packages_overlays_Themes), [Infinity-X](https://github.com/ProjectInfinity-X/packages_overlays_Themes), [AlphaDroid](https://github.com/AlphaDroid-Project/vendor_addons), [crDroid](https://github.com/crdroidandroid/android_vendor_addons) and [AospExtended](https://github.com/AospExtended/platform_vendor_aosp).
 
 ## License
