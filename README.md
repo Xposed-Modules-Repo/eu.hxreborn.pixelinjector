@@ -100,7 +100,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 - **Material You colors**: uses your wallpaper colors in Iceraven and Firefox (stable, Beta and Nightly). Private browsing takes dark red surfaces and the red error accent.
 - **Material 3 loading indicator**: shows pull to refresh as the shape morphing Material 3 indicator in your wallpaper colors.
-- **Menu style: Classic popup**: opens the three-dot menu as a popup laid out like Chrome's overflow menu, with the navigation buttons on top, in place of the bottom sheet.
+- **Menu style: Classic popup**: opens the three-dot menu as a popup laid out like Chrome's overflow menu, with the navigation buttons on top, in place of the bottom sheet. Also in IronFox.
 - **Betterfox**: sets the [Betterfox](https://github.com/yokoffing/Betterfox) prefs that the Android engine reads, per browser, with each group and pref switchable. Toggling restarts the browser.
 
 ## Report a bug
