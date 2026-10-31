@@ -82,7 +82,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 ### <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/call.svg" width="20" alt=""> Phone
 
-- **Remove feedback chip**: removes the Help us improve chip from the call list. Same hook as <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/modules/gdialer-dechip.png" width="16" alt=""> [gdialer-dechip](https://github.com/hxreborn/gdialer-dechip).
+- **Remove feedback chip**: removes the Help us improve chip from the call list and its notification after calls. The chip hook is the same as <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/modules/gdialer-dechip.png" width="16" alt=""> [gdialer-dechip](https://github.com/hxreborn/gdialer-dechip).
 
 ### <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/folder.svg" width="20" alt=""> File picker
 
