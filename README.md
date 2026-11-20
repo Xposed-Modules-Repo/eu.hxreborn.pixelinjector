@@ -41,7 +41,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 1. Download the APK from [Releases](https://github.com/hxreborn/PixelInjector/releases/latest) or the [Xposed Modules Repo](https://github.com/Xposed-Modules-Repo/eu.hxreborn.pixelinjector/releases).
 2. Enable PixelInjector in your Xposed manager and select the apps of the tweaks you need in its scope.
-3. Reboot once. Later updates install from the app and reload without a reboot.
+3. Reboot once. Later updates install over the old APK and reload without a reboot.
 
 ## Tweaks
 
@@ -54,7 +54,7 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 - **Always expand notifications**: opens notifications expanded unless you collapsed one by hand.
 - **Pin ongoing notifications**: stops swiping away ongoing notifications like media and VPN.
 - **Charging details**: adds watts, volts, amps and battery temperature under the lock screen charging text.
-- **Now playing chip**: shows the playing track and source app icon in the status bar.
+- **Now playing chip**: shows the playing track and source app icon in a status bar chip with custom text color, chip color and opacity.
 - **Download chip**: shows a download's progress as a chip in the status bar. Ported from [Iconify](https://github.com/Mahmud0808/Iconify)'s ongoing action chip.
 - **Fingerprint icon**: replaces the lock screen fingerprint icon with one of 34 icons from custom ROMs or your own image and can hide the circle behind it. Phones with an under-display fingerprint sensor.
 - **Hide shortcut circles**: removes the circle behind the lock screen shortcuts and keeps it while a shortcut is on, like the flashlight. The icons take the lock icon color on AOSP and keep their stock colors on One UI.
@@ -66,10 +66,11 @@ Needs Android 14 or newer, arm64, root and an Xposed framework with libxposed AP
 
 - **Force NEW_TASK**: adds NEW_TASK to activity starts that match your rules, one `source:target` per line.
 - **Clipboard in background**: allows selected apps to read the clipboard in the background.
+- **Screen off animation**: replaces the screen-off fade with a CRT animation. Frame math from the [YRRPs Lineage CRT](https://github.com/YRRPs/android_frameworks_base/pull/5).
 
 ### <img src="https://raw.githubusercontent.com/hxreborn/PixelInjector/main/assets/icons/home.svg" width="20" alt=""> Launcher
 
-- **Double tap to sleep**: double tap empty home screen space and the phone locks and sleeps. Pixel Launcher and Launcher3.
+- **Double tap to sleep**: double tap empty home screen space to put the phone to sleep. Pixel Launcher and Launcher3.
 - **Hide gesture pill**: makes the navigation handle transparent and keeps a chosen percent of the bottom inset under apps. A percent change restarts the launcher.
 - **Hide search bar**: hides the search bar above the hotseat and frees the row it reserves. Pixel Launcher and Launcher3.
 - **Hide app shortcuts**: a long press on an app shows only the system actions. Pixel Launcher and Launcher3.
